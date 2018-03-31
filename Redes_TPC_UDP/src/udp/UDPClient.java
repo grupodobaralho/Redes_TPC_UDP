@@ -17,13 +17,14 @@ public class UDPClient {
 		DatagramSocket ds = new DatagramSocket(2000);
 
 		// Especifica o endereco Inet
-		InetAddress ia = InetAddress.getLocalHost();
+		//InetAddress ia = InetAddress.getLocalHost();
+		InetAddress ia = InetAddress.getByName("192.168.0.14");
 
 		// Especifica o Arquivo
-		FileInputStream f = new FileInputStream("C:/Users/Israel-PC/Desktop/arquivoRedes.txt");
+		FileInputStream f = new FileInputStream("C:/Users/jonat/Desktop/Israel Jr/arquivoGrande.txt");
 
 		// Carrega o arquivo no array de bytes
-		byte b[] = new byte[1024];
+		byte b[] = new byte[11000];
 		int i = 0;
 		while (f.available() != 0) {
 			b[i] = (byte) f.read();
