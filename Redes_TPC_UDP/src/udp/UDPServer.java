@@ -16,12 +16,12 @@ public class UDPServer {
 		// eh preciso definir a porta(argumento)
 		DatagramSocket ds = new DatagramSocket(9999);
 
-		byte b[] = new byte[3072];
+		byte b[] = new byte[11000];
 		while (true) {
 			DatagramPacket dp = new DatagramPacket(b, b.length);
 			ds.receive(dp);
 			// System.out.println(new String(dp.getData(),0,dp.getLength()));
-			FileOutputStream f = new FileOutputStream("C:/Users/Israel-PC/Desktop/receber/arquivoRedes.txt");
+			FileOutputStream f = new FileOutputStream("C:/Users/Israel-PC/Desktop/redes/arquivoRedes.txt");
 			f.write(dp.getData());
 			f.close();
 		}
