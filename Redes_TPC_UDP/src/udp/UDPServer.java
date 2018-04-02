@@ -21,7 +21,7 @@ public class UDPServer {
 			DatagramPacket dp = new DatagramPacket(b, b.length);
 			ds.receive(dp);
 			// System.out.println(new String(dp.getData(),0,dp.getLength()));
-			FileOutputStream f = new FileOutputStream("C:/Users/Israel-PC/Desktop/redes/arquivoRedes.txt");
+			FileOutputStream f = new FileOutputStream("/home/labredes/Área de trabalho/Israel/output/arquivoRedes.txt");
 			f.write(dp.getData());
 			f.close();
 		}
