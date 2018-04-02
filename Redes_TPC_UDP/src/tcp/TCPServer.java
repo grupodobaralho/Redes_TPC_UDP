@@ -24,7 +24,7 @@ public class TCPServer {
 		InetAddress IA = InetAddress.getLocalHost();
 
 		// Especifica o arquivo
-		File file = new File("C:/Users/Israel-PC/Desktop/redes/arquivoRedes.txt");
+		File file = new File("/home/labredes/Área de trabalho/Israel/arquivoGrande.txt");
 		FileInputStream fis = new FileInputStream(file);
 		BufferedInputStream bis = new BufferedInputStream(fis);
 
