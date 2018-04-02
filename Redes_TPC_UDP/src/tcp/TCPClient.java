@@ -17,13 +17,13 @@ public class TCPClient {
 	public static void main(String[] args) throws Exception {
 
 		// Inicializa o Socket
-		InetAddress IA = InetAddress.getByName("192.168.0.14");
+		InetAddress IA = InetAddress.getByName("10.32.143.187");
 		Socket socket = new Socket(IA, 5000);
 		//Socket socket = new Socket(InetAddress.getLocalHost(), 5000);
 		byte[] contents = new byte[10000];
 
 		// Inicializa o FileOutputStream para o endereco de saida completo do arquivo
-		FileOutputStream fos = new FileOutputStream("C:/Users/jonat/Desktop/Israel Jr/arquivoRedes.txt");
+		FileOutputStream fos = new FileOutputStream("/home/labredes/Área de trabalho/Isra/output/arquivoRedes.txt");
 		BufferedOutputStream bos = new BufferedOutputStream(fos);
 		InputStream is = socket.getInputStream();
 

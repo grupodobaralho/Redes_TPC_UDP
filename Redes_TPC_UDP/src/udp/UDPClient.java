@@ -18,10 +18,10 @@ public class UDPClient {
 
 		// Especifica o endereco Inet
 		//InetAddress ia = InetAddress.getLocalHost();
-		InetAddress ia = InetAddress.getByName("192.168.0.14");
+		InetAddress ia = InetAddress.getByName("10.32.143.187");
 
 		// Especifica o Arquivo
-		FileInputStream f = new FileInputStream("C:/Users/jonat/Desktop/Israel Jr/arquivoGrande.txt");
+		FileInputStream f = new FileInputStream("/home/labredes/Área de trabalho/Isra/arquivoGrande.txt");
 
 		// Carrega o arquivo no array de bytes
 		byte b[] = new byte[11000];
